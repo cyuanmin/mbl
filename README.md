@@ -10,11 +10,11 @@
 
 # Ionic setup
 - Start Node command line
---
+```
 npm install -g ionic@latest
---
+```
 - verify installation with:
---
+```
 ionic --version
---
+```
 
