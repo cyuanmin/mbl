@@ -8,3 +8,13 @@
 - Download Node LTS 6.11.4
 - Install Node
 
+# Ionic setup
+- Start Node command line
+--
+npm install -g ionic@latest
+--
+- verify installation with:
+--
+ionic --version
+--
+
