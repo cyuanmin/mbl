@@ -82,7 +82,11 @@ Authorization: Bearer xxxxxxxxxxxxx
 - Find the organization ID from the list, and we will try to create the APK for the specific organization. Let's say the ID is 31 (Rose Brewery)
 
 # Organization folder customization
+- Open up Visual Studio Code
+- Open Beerlist repository
+- Sync latest code for Development branch
 - Clone a folder under app_ionic2/configurations for an organization
+- Rename the folder based on MBL naming convention
 - In Postman, make the following GET call:
 ```
 GET https://mybeerlist.co/Beer.Services/api/Settings/31
