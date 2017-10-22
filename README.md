@@ -23,6 +23,11 @@ ionic --version
 ```
 npm install -g cordova
 ```
+# Visual Studio Code setup
+- Download Visual Studio Code from https://code.visualstudio.com/download
+- Install it
+- git clone https://ychen.visualstudio.com/DefaultCollection/_git/Beerlist
+
 # Ionic registration
 - Go to https://apps.ionic.io/login
 - Click "Sign-up"
