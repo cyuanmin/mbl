@@ -11,7 +11,7 @@
 # Ionic setup
 - Start Node command line
 ```
-npm install -g ionic@latest
+sudo npm install -g ionic@latest
 ```
 - verify installation with:
 ```
@@ -21,17 +21,33 @@ ionic --version
 # Cordova setup
 - In Node command line, install Cordova by running:
 ```
-npm install -g cordova
+sudo npm install -g cordova
 ```
 # Visual Studio Code setup
 - Download Visual Studio Code from https://code.visualstudio.com/download
 - Install it
 - git clone https://ychen.visualstudio.com/DefaultCollection/_git/Beerlist
+- Run Visual Studio Code
+- Navigate to Beerlist
+- Switch to develop branch (click botton left button to see a list of branches)
 
 # Ionic registration
 - Go to https://apps.ionic.io/login
 - Click "Sign-up"
 - Register an account. This email & password will be used later
+
+# Download Java SDK
+- Download http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+- Install the SDK
+
+# Create APK for the default organization (MBL)
+The goal here is to create an APK for MBL
+```
+cd app_ionic2
+npm install
+ionic cordova resources android
+ionic cordova build android --release
+```
 
 # Get settings from API
 - Make API call to get org setting
