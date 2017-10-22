@@ -83,23 +83,28 @@ Authorization: Bearer xxxxxxxxxxxxx
 GET https://mybeerlist.co/Beer.Services/api/Settings/31
 ```
 - Replace defaultSetting.json in the with the online version
-- Extract Head Image & Icon from Settings JSON. 
-- Replace JSON's Icon with icon.PNG. Must scale to 1024x1024
-- Replace JSON's Header Image with Splash.PNG. Must scale to 2732x2732
+- Find appIcon's ImageId (103) and headImage's ImageId (104)
+- Let's download ICON image first (103): visit the following URL (with the appropriate image ID):
+```
+GET https://mybeerlist.co/Beer.Services/api/Images/103
+```
+- Replace icon.png with the image above. Must scale to 1024x1024
+- Now let's download splash image (104). Visit the following URL (with the appropriate image ID):
+```
+GET https://mybeerlist.co/Beer.Services/api/Images/104
+```
+- Replace splash.png with the image above. Must scale to 2732x2732
 - Edit config.xml with correct app name
 - Replace Firebase's google-services.json 
 
 # Visual Studio Code Compiling
-- Switch to Develop branch
-- Run the following
+- Replace files with the above settings
+- Compile against the updated setting
 ```
 cd app_ionic2
-npm install
 ionic cordova resources android
 ionic cordova build android --release
 ```
-- Remember to enter the email & password above
-- Generated APK can now be tested on Android phone
 
 
 
