@@ -49,11 +49,40 @@ ionic cordova resources android
 ionic cordova build android --release
 ```
 
-# Get settings from API
-- Make API call to get org setting
+# Install Postman for making API calls
+- Download Postman at https://www.getpostman.com
+- Install Postman
+- Run Postman
 
-- Visit https://mybeerlist.co/Beer.Services/api/Settings/29
-- Replace defaultSetting.json with the online version
+# Get Organization List
+- Make a POST call with the following parameters (make sure to select x-www-form-urlencoded)
+```
+POST https://mybeerlist.co/Beer.Identity/token
+grant_type:password
+username:xxxxxxxx
+password:xxxxxxxx
+client_id:beerApp
+```
+- Get the access token back
+- Retrieve organization list by making a GET call.
+```
+GET https://mybeerlist.co/Beer.Services/api/Organizations
+
+```
+- In Headers, make sure to have the following entry. The access token (eyJ0.. needs to be pasted behind "Bearer" in Authorization header)
+```
+Accept: application/json
+Authorization: Bearer xxxxxxxxxxxxx
+```
+- Find the organization ID from the list, and we will try to create the APK for the specific organization. Let's say the ID is 31 (Rose Brewery)
+
+# Organization folder customization
+- Clone a folder under app_ionic2/configurations for an organization
+- In Postman, make the following GET call:
+```
+GET https://mybeerlist.co/Beer.Services/api/Settings/31
+```
+- Replace defaultSetting.json in the with the online version
 - Extract Head Image & Icon from Settings JSON. 
 - Replace JSON's Icon with icon.PNG. Must scale to 1024x1024
 - Replace JSON's Header Image with Splash.PNG. Must scale to 2732x2732
