@@ -23,6 +23,11 @@ ionic --version
 ```
 sudo npm install -g cordova
 ```
+
+# Install GIT on MAC
+- Download GIT at https://git-scm.com/download/mac
+- Install it
+
 # Visual Studio Code setup
 - Download Visual Studio Code from https://code.visualstudio.com/download
 - Install it
@@ -30,10 +35,6 @@ sudo npm install -g cordova
 - Run Visual Studio Code
 - Navigate to Beerlist
 - Switch to develop branch (click botton left button to see a list of branches)
-
-# Install GIT on MAC
-- Download GIT at https://git-scm.com/download/mac
-- Install it
 
 # Ionic registration
 - Go to https://apps.ionic.io/login
