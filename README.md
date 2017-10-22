@@ -31,6 +31,10 @@ sudo npm install -g cordova
 - Navigate to Beerlist
 - Switch to develop branch (click botton left button to see a list of branches)
 
+# Install GIT on MAC
+- Download GIT at https://git-scm.com/download/mac
+- Install it
+
 # Ionic registration
 - Go to https://apps.ionic.io/login
 - Click "Sign-up"
@@ -94,7 +98,7 @@ GET https://mybeerlist.co/Beer.Services/api/Images/103
 GET https://mybeerlist.co/Beer.Services/api/Images/104
 ```
 - Replace splash.png with the image above. Must scale to 2732x2732
-- Edit config.xml with correct app name
+- Edit config.xml with correct app name`
 - Replace Firebase's google-services.json 
 
 # Visual Studio Code Compiling
